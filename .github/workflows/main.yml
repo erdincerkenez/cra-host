@@ -28,5 +28,7 @@ jobs:
         run: |
           echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
           echo ${{ matrix.node-version }}
+          npm ci
+          npm run build
         env:
           First_Name: Mona
