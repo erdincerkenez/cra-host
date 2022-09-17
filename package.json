@@ -13,7 +13,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "license": "MIT",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erdincerkenez/cra-host.git"
