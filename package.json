@@ -2,6 +2,8 @@
   "name": "@erdincerkenez/cra-host",
   "version": "0.1.0",
   "description": "this is my github actions settings",
+  "main":"src/index.js",
+  "bin":"src/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +13,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erdincerkenez/cra-host.git"
@@ -18,6 +21,10 @@
   "publishConfig": {
     "@erdincerkenez:registry": "https://npm.pkg.github.com"
   },
+  "bugs": {
+    "url": "https://github.com/erdincerkenez/cra-host/issues"
+  },
+  "homepage": "https://github.com/erdincerkenez/cra-host#readme",
   "scripts": {
     "start": "REACT_APP_NODE_ENV=development REACT_APP_API_URL=development.com react-scripts start",
     "start-prod": "REACT_APP_NODE_ENV=production REACT_APP_API_URL=production.com react-scripts start ",
