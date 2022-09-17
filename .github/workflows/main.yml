@@ -34,7 +34,7 @@ jobs:
           node-version: '16'
           path: main
       - name: Install dependencies
-        run: npm install
+        run: file package.json | grep -q ' json '
         
         env:
           First_Name: Mona
