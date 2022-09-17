@@ -32,10 +32,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-
+      
       - name: Install dependencies
         run: npm install
-      - name: npm init
-        run: npm init -y
+           working-directory: ./app
         env:
           First_Name: Mona
