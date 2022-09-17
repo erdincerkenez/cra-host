@@ -26,6 +26,6 @@ jobs:
     steps:
       - name: checkout
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+        run: echo ${{ matrix.node-version }}
         env:
           First_Name: Mona
-          run: echo ${{ matrix.node-version }}
