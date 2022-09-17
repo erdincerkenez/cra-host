@@ -29,12 +29,11 @@ jobs:
           echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
           echo ${{ matrix.node-version }}
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        - uses: actions/checkout@v2
         with:
           node-version: '16'
        
       - name: Install dependencies
-        working-directory: ../
         run: |
           cat package.json
           npm install
