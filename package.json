@@ -2,7 +2,6 @@
   "name": "@erdincerkenez/cra-host",
   "version": "0.1.0",
   "description": "this is my github actions settings",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
