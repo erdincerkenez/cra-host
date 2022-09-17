@@ -32,9 +32,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
+          directory: 'out/'
       - name: Install dependencies
         run: npm install
-        working-directory: dirname
-        
         env:
           First_Name: Mona
