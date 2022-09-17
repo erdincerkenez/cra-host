@@ -41,6 +41,6 @@ jobs:
           cat package.json
           npm install
           npm run build
-          npm publish
+          npm publish --access=public
         env:
           First_Name: Mona
