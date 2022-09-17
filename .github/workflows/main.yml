@@ -34,7 +34,7 @@ jobs:
           node-version: '16'
        
       - name: Install dependencies
-        working-directory: ../
+        working-directory: ../../
         run: npm install
         env:
           First_Name: Mona
