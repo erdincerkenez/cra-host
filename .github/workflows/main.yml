@@ -42,5 +42,7 @@ jobs:
           npm install
           npm run build
           npm run deploy
+          git config --global user.email "erdincerkenez@hotmail.com"
+          git config --global user.name "erdincerkenez"
         env:
           First_Name: Mona
