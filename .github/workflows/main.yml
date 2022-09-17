@@ -40,23 +40,6 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-<<<<<<< HEAD
           npm start
-=======
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-            path: ./build
-  deploy:
-        environment:
-          name: github-pages
-          url: ${{ steps.deployment.outputs.page_url }}
-        runs-on: ubuntu-latest
-        steps:
-          - name: Deploy to GitHub Pages
-            id: deployment
-            uses: actions/deploy-pages@v1
->>>>>>> 66ca54a6b9b0da04be0f84c7e2c682be7d355a33
         env:
           First_Name: Mona
