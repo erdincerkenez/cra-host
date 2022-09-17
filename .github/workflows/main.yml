@@ -34,7 +34,7 @@ jobs:
           node-version: '16'
       - name: Install dependencies
         run: npm install
-          working-directory: CRA-HOST
+          working-directory: cra-host
         
         env:
           First_Name: Mona
