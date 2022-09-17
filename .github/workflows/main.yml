@@ -43,10 +43,7 @@ jobs:
           npm run build
 
       - name: deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          folder: build
-          branch: main
+        uses: actions/deploy-pages@v1
+     
         env:
           First_Name: Mona
