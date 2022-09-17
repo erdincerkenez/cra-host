@@ -32,8 +32,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-        path: './home/runner/work/cra-host'
+       
       - name: Install dependencies
+        id: dir
+        with:
+           directory: 'out/'
         run: npm install
         env:
           First_Name: Mona
