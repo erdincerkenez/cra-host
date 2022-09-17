@@ -41,6 +41,5 @@ jobs:
           cat package.json
           npm install
           npm run build
-          npm publish --access=public -registry=https://npm.pkg.github.com/
         env:
           First_Name: Mona
