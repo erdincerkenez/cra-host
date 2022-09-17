@@ -28,12 +28,7 @@ jobs:
         run: |
           echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
           echo ${{ matrix.node-version }}
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
           npm ci
-          else
           npm i
-          fi
         env:
           First_Name: Mona
