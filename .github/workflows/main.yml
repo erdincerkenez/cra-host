@@ -24,12 +24,12 @@ jobs:
     env:
       Greeting: Hello2
     steps:
-      - uses: actions/checkout@v2
       - name: checkout
         run: |
           echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
           echo ${{ matrix.node-version }}
       - name: Setup Node.js
+        uses: actions/checkout@v2
         with:
           node-version: '16'
        
