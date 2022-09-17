@@ -29,6 +29,5 @@ jobs:
           echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
           echo ${{ matrix.node-version }}
           npm ci
-          npm i
         env:
           First_Name: Mona
