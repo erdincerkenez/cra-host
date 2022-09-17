@@ -41,5 +41,10 @@ jobs:
           cat package.json
           npm install
           npm run build
+          
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
         env:
           First_Name: Mona
