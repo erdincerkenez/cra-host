@@ -37,5 +37,6 @@ jobs:
         run: |
           cat package.json
           npm install
+          npm run build
         env:
           First_Name: Mona
