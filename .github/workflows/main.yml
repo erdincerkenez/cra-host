@@ -34,6 +34,7 @@ jobs:
           node-version: '16'
        
       - name: Install dependencies
+        working-directory: ../
         run: |
           cat package.json
           npm install
