@@ -35,6 +35,6 @@ jobs:
       
       - name: Install dependencies
         run: npm install
-           working-directory: ./app
+        working-directory: ./app
         env:
           First_Name: Mona
